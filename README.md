@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Multipurpose Benchmark Visualization
 
-## Getting Started
+# Installation
 
-First, run the development server:
+After cloning the repository or downloading the ZIP file, run one of the following commands to install the dependencies:
 
-```bash
-npm run dev
-# or
+npm install
+
+yarn
+
+pnpm install
+
+## Running the Project
+
+To start the project in development mode, use one of the following commands:
+
 yarn dev
-# or
+
+npm run dev
+
 pnpm dev
-# or
+
 bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Preview](./public/preview.png)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project implements a benchmark visualization interface using React and framer-motion for animations.
 
-## Learn More
+Technical Description
+Types:
 
-To learn more about Next.js, take a look at the following resources:
+BenchmarkData: Structure containing a title and five items (date1 to date5).
+BenchmarkItemData: Structure for an item with a numeric value.
+Benchmark Data:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+An array of BenchmarkData objects with example data.
+Components:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+BenchmarkConfig: Component that displays the title and five animated benchmark items.
+BenchmarkItem: Component that displays an animated progress bar with color and width based on the item's value.
+BenchmarkContainer: Container that renders multiple BenchmarkConfig components from the provided data.
 
-## Deploy on Vercel
+Technologies:
+React: For building the interface.
+framer-motion: For animations.
+TypeScript: For static typing.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Structure:
+Definition of types and data.
+Components for displaying and animating benchmarks.
+Container that groups and rende
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Visit the Live Site](https://multipurpose-benchmark.vercel.app/)
+
+[![](https://skillicons.dev/icons?i=ts,react,tailwind)](https://skillicons.dev)

@@ -53,4 +53,4 @@ Container that groups and rende
 
 [Visit the Live Site](https://multipurpose-benchmark.vercel.app/)
 
-[![](https://skillicons.dev/icons?i=ts,react,tailwind)](https://skillicons.dev)
+[![](https://skillicons.dev/icons?i=react,ts,tailwind)](https://skillicons.dev)

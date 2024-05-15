@@ -20,7 +20,7 @@ export const benchmarkItemVariants = {
     scaleX: 1,
     opacity: 1,
     transition: {
-      duration: 6,
+      duration: 4,
       ease: [0.65, 0, 0.35, 1],
     },
   },

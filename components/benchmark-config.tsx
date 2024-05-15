@@ -23,7 +23,7 @@ const BenchmarkConfig: React.FC<BenchmarkData> = ({
       viewport={{ once: true, margin: "-200px" }} // Viewport settings to trigger animation
       variants={benchmarkContainerVariants} // Animation variants for the container
     >
-      <h2 className="text-center text-xl text-white font-semibold tracking-widest md:text-2xl">
+      <h2 className="text-center text-md text-white font-semibold tracking-widest md:text-2xl">
         My Linux OS tier list.
       </h2>
       {/* Benchmark items for each Linux distribution with corresponding values and colors */}
@@ -56,11 +56,11 @@ const BenchmarkItem: React.FC<BenchmarkItemProps> = ({
       <div className="flex w-full flex-col">
         {" "}
         {/* Flexbox for layout */}
-        <span className="mb-1 text-lg">{title}</span>{" "}
+        <span className="mb-1 text-sm md:text-lg">{title}</span>{" "}
         {/* Title of the benchmark item */}
         <motion.div
           variants={benchmarkItemVariants} // Animation variants for the item
-          className={`h-[0.600rem] w-full rounded-full ${
+          className={`h-[0.400rem] md:h-[0.600rem] w-full rounded-full ${
             color === "color1"
               ? "bg-red-500"
               : color === "color2"
